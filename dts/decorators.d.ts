@@ -1,0 +1,11 @@
+import * as restify from "restify";
+import interfaces from "./interfaces";
+export declare function Controller(path: string, ...middleware: restify.RequestHandler[]): (target: any) => void;
+export declare function Get(path: string, ...middleware: restify.RequestHandler[]): interfaces.HandlerDecorator;
+export declare function Post(path: string, ...middleware: restify.RequestHandler[]): interfaces.HandlerDecorator;
+export declare function Put(path: string, ...middleware: restify.RequestHandler[]): interfaces.HandlerDecorator;
+export declare function Patch(path: string, ...middleware: restify.RequestHandler[]): interfaces.HandlerDecorator;
+export declare function Head(path: string, ...middleware: restify.RequestHandler[]): interfaces.HandlerDecorator;
+export declare function Delete(path: string, ...middleware: restify.RequestHandler[]): interfaces.HandlerDecorator;
+export declare function Options(path: string, ...middleware: restify.RequestHandler[]): interfaces.HandlerDecorator;
+export declare function Method(method: string, path: string, ...middleware: restify.RequestHandler[]): interfaces.HandlerDecorator;
